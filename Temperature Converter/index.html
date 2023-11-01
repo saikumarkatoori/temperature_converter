@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="main_box">
+        <div id="Heading_Text">Temperature Converter</div>
+
+
+        <div id="left">
+            <select id="itemsLeft">
+                <option value="Select">Select From Unit</option>
+                <option value="Celsius">Celsius</option>
+                <option value="Kelvin">Kelvin</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Rankine">Rankine</option>
+            </select>
+
+            <p id="numberLeft">0</p>
+            <p id="unitLeft">From Unit</p>
+
+        </div>
+
+        <div id="input_box">
+
+            <input type="number" name="val" id="inputValue" placeholder="Enter the Value">
+            <button id="convert_btn" onclick="submission()" type="submit" value="Submit">CONVERT</button>
+        </div>
+        <div id="right">
+            <select id="itemsRight">
+                <option value="Select">Select To Unit</option>
+                <option value="Celsius">Celsius</option>
+                <option value="Kelvin">Kelvin</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Rankine">Rankine</option>
+            </select>
+
+            <p id="numberRight">0</p>
+            <p id="unitRight">To Unit</p>
+        </div>
+
+
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
